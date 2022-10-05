@@ -20,7 +20,7 @@ class Handler implements URLHandler {
                 String foundStrings = "";
                 for( String t: terms)
                     if (t.contains(parameters[0]))
-                        foundStrings = foundStrings + t + " ";
+                        foundStrings = foundStrings + t + ", ";
                 return foundStrings;
             }
             return "404 not found!";
